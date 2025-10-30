@@ -3,7 +3,7 @@ export default function Noticia({titulo, fecha, contenido, imagenes}) {
         <div className="noticia" id="inicio">
           <h2>{titulo}</h2>
           <p><strong>Fecha:</strong> {fecha}</p>
-          <p>{contenido}</p>
+          <p className="descripcion-eventos">{contenido}</p>
             {imagenes && imagenes.length > 0 && (
                 <div className="imagenes-noticia">
                     {imagenes.map((imgSrc, index) => (

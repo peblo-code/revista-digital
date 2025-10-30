@@ -1,0 +1,138 @@
+
+.crud-panel {
+	background: #f8fafd;
+	border-radius: 16px;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+	padding: 2em 1.5em;
+	margin: 2em auto;
+	max-width: 900px;
+}
+
+.crud-panel h2 {
+	text-align: center;
+	color: #004080;
+	margin-bottom: 1.5em;
+}
+
+.crud-panel .crud-tabs {
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+
+.crud-panel .crud-tabs button {
+	background: #e3eafc;
+	color: #004080;
+	border: none;
+	border-radius: 8px 8px 0 0;
+	padding: 10px 24px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.crud-panel .crud-tabs button:disabled {
+	background: #004080;
+	color: #fff;
+	cursor: default;
+}
+.crud-panel .crud-tabs button:not(:disabled):hover {
+	background: #b3cdfc;
+}
+
+.crud-panel .crud-form {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+	padding: 1.5em;
+	margin-bottom: 2em;
+}
+.crud-panel .crud-form h3 {
+	margin-top: 0;
+	color: #0055aa;
+}
+.crud-panel .crud-form label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+	color: #333;
+}
+.crud-panel .crud-form input,
+.crud-panel .crud-form textarea {
+	width: 100%;
+	padding: 8px;
+	border-radius: 6px;
+	border: 1px solid #cfd8dc;
+	margin-bottom: 12px;
+	font-size: 16px;
+	background: #f4f8fb;
+	resize: vertical;
+}
+.crud-panel .crud-form textarea {
+	min-height: 60px;
+}
+.crud-panel .crud-form button {
+	background: #004080;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	padding: 8px 18px;
+	font-weight: bold;
+	margin-right: 8px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.crud-panel .crud-form button:hover {
+	background: #0055aa;
+}
+
+.crud-panel table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+	overflow: hidden;
+}
+.crud-panel th, .crud-panel td {
+	padding: 12px 10px;
+	text-align: left;
+}
+.crud-panel th {
+	background: #e3eafc;
+	color: #004080;
+	font-weight: bold;
+}
+.crud-panel tr {
+	border-bottom: 1px solid #f0f0f0;
+}
+.crud-panel tr:last-child {
+	border-bottom: none;
+}
+.crud-panel td {
+	vertical-align: top;
+}
+.crud-panel button {
+	background: #004080;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	padding: 6px 14px;
+	font-size: 15px;
+	margin-right: 6px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.crud-panel button:hover {
+	background: #0055aa;
+}
+
+@media (max-width: 700px) {
+	.crud-panel {
+		padding: 1em 0.5em;
+		max-width: 100%;
+	}
+	.crud-panel table, .crud-panel .crud-form {
+		font-size: 15px;
+	}
+}
