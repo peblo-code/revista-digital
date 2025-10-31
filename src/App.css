@@ -161,7 +161,7 @@ footer {
     align-items: center;
     /* En móviles también usamos sticky. Evitar position:fixed para no sacar el nav del flujo
      y provocar solapamientos con el contenido. */
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 1000;
   }
@@ -175,6 +175,20 @@ footer {
 
   header h1 {
       font-size: 24px;
+  }
+
+  .container {
+    padding: 1em 2em;
+  }
+
+  .noticia {
+      padding: 15px;
+  }
+
+  .noticia img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
   }
 }
 
