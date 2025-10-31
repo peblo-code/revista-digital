@@ -2,6 +2,7 @@ import Noticia from './components/Noticia';
 import Header from './components/Header';
 import Galeria from './components/Galeria';
 import Descripcion from './components/Descripcion';
+import Eventos from './components/Eventos';
 
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from './firebase/firebaseConfig';
@@ -109,7 +110,7 @@ function App() {
               />
             ))}
             {eventos.map((evento, index) => (
-              <Noticia
+              <Eventos
                 key={index}
                 titulo={evento.titulo}
                 fecha={evento.fecha}
